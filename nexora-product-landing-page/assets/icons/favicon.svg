@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none">
+  <defs>
+    <linearGradient id="nexoraGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E25075"/>
+      <stop offset="50%" stop-color="#FFCED8"/>
+      <stop offset="100%" stop-color="#FFE8C4"/>
+    </linearGradient>
+  </defs>
+  <rect width="48" height="48" rx="12" fill="#FFF9F2"/>
+  <rect x="0.5" y="0.5" width="47" height="47" rx="11.5" stroke="#FFCED8" stroke-width="1.5"/>
+  <!-- Abstract Geometric Hexagon / N Shape -->
+  <path d="M14 34V14L24 24L34 14V34" stroke="url(#nexoraGrad)" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="24" cy="24" r="3" fill="#EE7752"/>
+  <circle cx="14" cy="14" r="2.5" fill="#E25075"/>
+  <circle cx="34" cy="14" r="2.5" fill="#E25075"/>
+</svg>

@@ -1,0 +1,1311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="NEXORA is an all-in-one productivity platform uniting smart task management, real-time team collaboration, and visual productivity insights in one workspace.">
+  <meta name="keywords" content="NEXORA, SaaS, productivity platform, task management, team collaboration, sprint planning, productivity analytics">
+  <meta name="author" content="NEXORA Team">
+  <title>NEXORA — Your Work. Your Goals. One Powerful Workspace.</title>
+
+  <!-- Open Graph / Meta -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="NEXORA — One Powerful Workspace">
+  <meta property="og:description" content="Bring your tasks, team collaboration, and productivity insights together in one beautifully organized workspace.">
+  <meta property="og:image" content="assets/icons/favicon.svg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+
+  <!-- Google Fonts: Plus Jakarta Sans & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Accessible Skip Link -->
+  <a href="#main-content" class="skip-to-content">Skip to main content</a>
+
+  <!-- Ambient Decorative Background Orbs -->
+  <div class="ambient-glow orb-violet" aria-hidden="true"></div>
+  <div class="ambient-glow orb-cyan" aria-hidden="true"></div>
+  <div class="ambient-glow orb-center" aria-hidden="true"></div>
+
+  <!-- Responsive Sticky Navigation -->
+  <header class="site-header" id="site-header">
+    <div class="container nav-container">
+      <!-- Brand Logo -->
+      <a href="#home" class="brand-logo" aria-label="NEXORA Home">
+        <div class="logo-icon-wrapper" aria-hidden="true">
+          <svg class="logo-icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="navLogoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#E25075"/>
+                <stop offset="50%" stop-color="#FFCED8"/>
+                <stop offset="100%" stop-color="#FFE8C4"/>
+              </linearGradient>
+            </defs>
+            <rect width="40" height="40" rx="10" fill="#FFFFFF" stroke="#FFCED8" stroke-width="1.5"/>
+            <path d="M12 28V12L20 20L28 12V28" stroke="url(#navLogoGrad)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="20" cy="20" r="2.5" fill="#EE7752"/>
+          </svg>
+        </div>
+        <span class="brand-name">NEXORA<span class="brand-dot">.</span></span>
+      </a>
+
+      <!-- Primary Navigation Links -->
+      <nav class="primary-nav" id="primary-nav" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+          <li class="nav-item"><a href="#features" class="nav-link">Features</a></li>
+          <li class="nav-item"><a href="#pricing" class="nav-link">Pricing</a></li>
+          <li class="nav-item"><a href="#faq" class="nav-link">FAQ</a></li>
+        </ul>
+        <div class="mobile-nav-cta">
+          <button type="button" class="btn btn-primary w-100 open-modal-btn" data-plan="Pro">Get Started</button>
+        </div>
+      </nav>
+
+      <!-- Desktop Action & Mobile Hamburger -->
+      <div class="nav-actions">
+        <button type="button" class="btn btn-primary btn-sm desktop-cta open-modal-btn" data-plan="Pro">
+          <span>Get Started</span>
+          <svg class="icon-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </button>
+
+        <button type="button" class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle navigation menu">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Landmark -->
+  <main id="main-content">
+
+    <!-- 1. HERO SECTION -->
+    <section id="home" class="hero-section" aria-labelledby="hero-headline">
+      <div class="container hero-container">
+        
+        <!-- Hero Text Content -->
+        <div class="hero-content">
+          <!-- Announcement Badge -->
+          <div class="announcement-badge animate-fade-in" style="--delay: 100ms;">
+            <span class="badge-pulse" aria-hidden="true"></span>
+            <span class="badge-text">Introducing NEXORA 2.0</span>
+            <span class="badge-divider" aria-hidden="true">•</span>
+            <span class="badge-sub">Next-Gen Workspace</span>
+          </div>
+
+          <!-- Main Headline -->
+          <h1 id="hero-headline" class="hero-title animate-fade-in" style="--delay: 200ms;">
+            Your Work. Your Goals. <br>
+            <span class="gradient-text">One Powerful Workspace.</span>
+          </h1>
+
+          <!-- Supporting Subtitle -->
+          <p class="hero-subtitle animate-fade-in" style="--delay: 300ms;">
+            Bring your tasks, team collaboration, and productivity insights together in one beautifully organized workspace. Spend less time managing work and more time making progress.
+          </p>
+
+          <!-- CTA Buttons -->
+          <div class="hero-cta-group animate-fade-in" style="--delay: 400ms;">
+            <button type="button" class="btn btn-primary btn-lg open-modal-btn" data-plan="Pro" id="hero-primary-cta">
+              <span>Start Your Free Trial</span>
+              <svg class="icon-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </button>
+            <a href="#features" class="btn btn-secondary btn-lg" id="hero-secondary-cta">
+              <span>Explore Features</span>
+            </a>
+          </div>
+
+          <!-- Trust Indicator -->
+          <div class="hero-trust animate-fade-in" style="--delay: 500ms;">
+            <div class="avatar-stack" aria-hidden="true">
+              <span class="avatar av-1">SL</span>
+              <span class="avatar av-2">MR</span>
+              <span class="avatar av-3">TK</span>
+              <span class="avatar av-4">AJ</span>
+            </div>
+            <div class="trust-copy">
+              <span class="trust-stars" aria-label="Rated 5 out of 5 stars">★★★★★</span>
+              <p class="trust-text">Designed for focused teams and ambitious individuals.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Right: Interactive Dashboard Preview (Pure HTML & CSS) -->
+        <div class="hero-preview-wrapper animate-fade-in" style="--delay: 350ms;">
+          <!-- Floating Badge Top Right -->
+          <div class="floating-pill pill-top" aria-hidden="true">
+            <div class="pill-icon-glow">⚡</div>
+            <div class="pill-details">
+              <span class="pill-title">+34% Sprint Velocity</span>
+              <span class="pill-sub">Ahead of Q4 Target</span>
+            </div>
+          </div>
+
+          <!-- Floating Badge Bottom Left -->
+          <div class="floating-pill pill-bottom" aria-hidden="true">
+            <div class="pill-check-icon">✓</div>
+            <div class="pill-details">
+              <span class="pill-title">Milestone Completed</span>
+              <span class="pill-sub">All 42 Tasks Verified</span>
+            </div>
+          </div>
+
+          <!-- Application Dashboard Window -->
+          <div class="app-window" role="region" aria-label="Interactive NEXORA Product Interface Preview">
+            <!-- Window Control Header -->
+            <div class="window-header">
+              <div class="window-dots" aria-hidden="true">
+                <span class="dot dot-close" title="Demo window"></span>
+                <span class="dot dot-minimize" title="Demo window"></span>
+                <span class="dot dot-maximize" title="Demo window"></span>
+              </div>
+              <!-- Functional Interactive Search Bar -->
+              <div class="window-search" role="search">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <circle cx="11" cy="11" r="8"></circle>
+                  <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+                <input type="text" id="mockup-search-input" class="mockup-search-input" placeholder="Search tasks, sprints, team..." aria-label="Search within preview workspace" autocomplete="off">
+                <button type="button" id="mockup-search-clear" class="mockup-search-clear" aria-label="Clear search" title="Clear search" hidden>&times;</button>
+              </div>
+              <div class="window-status" aria-hidden="true">
+                <span class="status-indicator"></span>
+                <span>Live Sync</span>
+              </div>
+            </div>
+
+            <!-- Workspace Body -->
+            <div class="window-body">
+              <!-- Mini App Sidebar with Interactive Tabs -->
+              <aside class="mockup-sidebar" aria-label="Preview Sidebar Navigation">
+                <div class="sidebar-logo-mark" title="NEXORA Workspace">N</div>
+                <div class="sidebar-nav" role="tablist" aria-label="Workspace Views">
+                  <button type="button" class="sidebar-item active" id="tab-btn-tasks" data-view="tasks" role="tab" aria-selected="true" aria-controls="view-tasks" title="Tasks Board">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                      <path d="M9 11l3 3L22 4"/>
+                      <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/>
+                    </svg>
+                    <span class="sr-only">Tasks</span>
+                  </button>
+                  <button type="button" class="sidebar-item" id="tab-btn-analytics" data-view="analytics" role="tab" aria-selected="false" aria-controls="view-analytics" title="Productivity Analytics">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                      <line x1="18" y1="20" x2="18" y2="10"/>
+                      <line x1="12" y1="20" x2="12" y2="4"/>
+                      <line x1="6" y1="20" x2="6" y2="14"/>
+                    </svg>
+                    <span class="sr-only">Analytics</span>
+                  </button>
+                  <button type="button" class="sidebar-item" id="tab-btn-calendar" data-view="calendar" role="tab" aria-selected="false" aria-controls="view-calendar" title="Sprint Calendar">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                      <rect x="3" y="4" width="18" height="18" rx="2"/>
+                      <line x1="16" y1="2" x2="16" y2="6"/>
+                      <line x1="8" y1="2" x2="8" y2="6"/>
+                      <line x1="3" y1="10" x2="21" y2="10"/>
+                    </svg>
+                    <span class="sr-only">Calendar</span>
+                  </button>
+                  <button type="button" class="sidebar-item" id="tab-btn-team" data-view="team" role="tab" aria-selected="false" aria-controls="view-team" title="Team Members">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                      <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                      <circle cx="9" cy="7" r="4"/>
+                    </svg>
+                    <span class="sr-only">Team</span>
+                  </button>
+                </div>
+                <div class="sidebar-user-avatar" title="Signed in as Sarah Lin">SL</div>
+              </aside>
+
+              <!-- Main Dashboard Canvas -->
+              <div class="mockup-canvas">
+                <!-- Dashboard Canvas Topbar -->
+                <div class="canvas-topbar">
+                  <div>
+                    <h2 class="canvas-title" id="canvas-main-title">Sprint 24 • Product Launch</h2>
+                    <span class="canvas-subtitle" id="canvas-main-subtitle">8 members active • 4 days remaining</span>
+                  </div>
+                  <button type="button" class="mockup-btn" id="btn-new-task" aria-label="Add new demo task">+ New Task</button>
+                </div>
+
+                <!-- Metrics Quick Cards -->
+                <div class="metrics-row">
+                  <div class="metric-card">
+                    <span class="metric-label">Sprint Velocity</span>
+                    <div class="metric-val-row">
+                      <span class="metric-value" id="metric-velocity-val">94.8%</span>
+                      <span class="metric-trend up">+12%</span>
+                    </div>
+                    <div class="progress-bar-track">
+                      <div class="progress-bar-fill" id="metric-velocity-bar" style="width: 94.8%;"></div>
+                    </div>
+                  </div>
+
+                  <div class="metric-card">
+                    <span class="metric-label">Completed Tasks</span>
+                    <div class="metric-val-row">
+                      <span class="metric-value" id="metric-completed-val">38/42</span>
+                      <span class="metric-trend" id="metric-completed-pct">90%</span>
+                    </div>
+                    <div class="progress-bar-track">
+                      <div class="progress-bar-fill cyan-fill" id="metric-completed-bar" style="width: 90%;"></div>
+                    </div>
+                  </div>
+
+                  <div class="metric-card">
+                    <span class="metric-label">Deep Work</span>
+                    <div class="metric-val-row">
+                      <span class="metric-value" id="metric-focus-val">5.2 hrs</span>
+                      <span class="metric-trend up">+18%</span>
+                    </div>
+                    <div class="progress-bar-track">
+                      <div class="progress-bar-fill mint-fill" style="width: 82%;"></div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Interactive "+ New Task" Creation Drawer -->
+                <div class="mockup-new-task-drawer" id="mockup-task-drawer" hidden>
+                  <form id="mockup-add-task-form" class="mockup-task-form">
+                    <div class="drawer-header">
+                      <span class="drawer-title">Create New Task for Sprint 24</span>
+                      <button type="button" class="drawer-close" id="btn-close-task-drawer" aria-label="Cancel new task">&times;</button>
+                    </div>
+                    <div class="drawer-body">
+                      <input type="text" id="new-task-input" class="drawer-input" placeholder="Task title (e.g. Implement OAuth 2.0 Flow)..." required autocomplete="off">
+                      <div class="drawer-options">
+                        <select id="new-task-tag" class="drawer-select" aria-label="Task Tag">
+                          <option value="tag-violet">Design Tokens</option>
+                          <option value="tag-cyan">API Pipeline</option>
+                          <option value="tag-mint">Analytics</option>
+                          <option value="tag-peach">Frontend Tour</option>
+                        </select>
+                        <select id="new-task-priority" class="drawer-select" aria-label="Priority">
+                          <option value="priority-high">High Priority</option>
+                          <option value="priority-med" selected>Medium Priority</option>
+                          <option value="priority-low">Low Priority</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="drawer-footer">
+                      <button type="submit" class="drawer-btn-save">Add to Sprint</button>
+                      <button type="button" class="drawer-btn-cancel" id="btn-cancel-task">Cancel</button>
+                    </div>
+                  </form>
+                </div>
+
+                <!-- VIEW 1: TASKS BOARD (Default) -->
+                <div class="canvas-view active" id="view-tasks" role="tabpanel" aria-labelledby="tab-btn-tasks">
+                  <div class="canvas-workspace-grid">
+                    <!-- Active Tasks Column -->
+                    <div class="mockup-tasks-col">
+                      <div class="col-header">
+                        <span class="col-title">In Progress</span>
+                        <span class="col-count" id="in-progress-count">2</span>
+                      </div>
+
+                      <div class="mockup-tasks-list" id="mockup-tasks-list">
+                        <!-- Task Item 1 -->
+                        <div class="mockup-task-item" data-task-id="1">
+                          <div class="task-top">
+                            <span class="task-tag tag-violet">Design Tokens v2</span>
+                            <span class="priority-dot priority-high" title="High Priority"></span>
+                          </div>
+                          <div class="task-interactive-row">
+                            <button type="button" class="task-check-circle" aria-label="Toggle task completion" title="Click to complete task"></button>
+                            <p class="task-name">Refactor dark mode palette & ambient glows</p>
+                          </div>
+                          <div class="task-footer">
+                            <div class="task-subtasks">✓ 3/4 subtasks</div>
+                            <div class="task-assignees">
+                              <span class="mini-avatar av-sl">SL</span>
+                              <span class="mini-avatar av-mr">MR</span>
+                            </div>
+                          </div>
+                        </div>
+
+                        <!-- Task Item 2 -->
+                        <div class="mockup-task-item" data-task-id="2">
+                          <div class="task-top">
+                            <span class="task-tag tag-cyan">API Pipeline</span>
+                            <span class="priority-dot priority-med" title="Medium Priority"></span>
+                          </div>
+                          <div class="task-interactive-row">
+                            <button type="button" class="task-check-circle" aria-label="Toggle task completion" title="Click to complete task"></button>
+                            <p class="task-name">Real-time sync webhooks integration</p>
+                          </div>
+                          <div class="task-footer">
+                            <div class="task-subtasks">✓ 5/5 subtasks</div>
+                            <div class="task-assignees">
+                              <span class="mini-avatar av-tk">TK</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Search Empty State -->
+                      <div class="mockup-empty-search" id="tasks-empty-state" hidden>
+                        <p>No tasks matching search</p>
+                        <button type="button" class="btn-reset-mockup-search">Clear filter</button>
+                      </div>
+                    </div>
+
+                    <!-- Weekly Activity Chart Column -->
+                    <div class="mockup-chart-col">
+                      <div class="col-header">
+                        <span class="col-title">Weekly Output</span>
+                        <span class="chart-summary" id="chart-summary-text">148 Tasks Done</span>
+                      </div>
+                      <!-- Interactive CSS Bar Chart -->
+                      <div class="bar-chart-container" aria-label="Interactive weekly activity chart">
+                        <div class="chart-bar-group" data-day="Monday" data-count="24 tasks">
+                          <div class="chart-bar" style="--height: 55%;" title="Mon: 24 tasks"></div>
+                          <span class="chart-day">M</span>
+                        </div>
+                        <div class="chart-bar-group" data-day="Tuesday" data-count="32 tasks">
+                          <div class="chart-bar" style="--height: 75%;" title="Tue: 32 tasks"></div>
+                          <span class="chart-day">T</span>
+                        </div>
+                        <div class="chart-bar-group" data-day="Wednesday" data-count="28 tasks">
+                          <div class="chart-bar" style="--height: 65%;" title="Wed: 28 tasks"></div>
+                          <span class="chart-day">W</span>
+                        </div>
+                        <div class="chart-bar-group" data-day="Thursday" data-count="42 tasks (Peak)">
+                          <div class="chart-bar active-bar" style="--height: 96%;" title="Thu: 42 tasks (Peak)"></div>
+                          <span class="chart-day">T</span>
+                        </div>
+                        <div class="chart-bar-group" data-day="Friday" data-count="36 tasks">
+                          <div class="chart-bar" style="--height: 85%;" title="Fri: 36 tasks"></div>
+                          <span class="chart-day">F</span>
+                        </div>
+                        <div class="chart-bar-group" data-day="Saturday" data-count="16 tasks">
+                          <div class="chart-bar" style="--height: 40%;" title="Sat: 16 tasks"></div>
+                          <span class="chart-day">S</span>
+                        </div>
+                        <div class="chart-bar-group" data-day="Sunday" data-count="14 tasks">
+                          <div class="chart-bar" style="--height: 35%;" title="Sun: 14 tasks"></div>
+                          <span class="chart-day">S</span>
+                        </div>
+                      </div>
+
+                      <!-- Live Collab Feed -->
+                      <div class="mini-collab-feed">
+                        <div class="feed-pulse"></div>
+                        <p class="feed-text" id="mockup-feed-text"><strong>Sarah Lin</strong> completed <em>"Design System Tokens v2"</em></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- VIEW 2: ANALYTICS VIEW -->
+                <div class="canvas-view" id="view-analytics" role="tabpanel" aria-labelledby="tab-btn-analytics" hidden>
+                  <div class="canvas-analytics-grid">
+                    <div class="analytics-subcard">
+                      <div class="subcard-header">
+                        <span class="subcard-title">Velocity Progression</span>
+                        <span class="subcard-badge">+14% Growth</span>
+                      </div>
+                      <div class="velocity-bars-stack">
+                        <div class="velocity-bar-item">
+                          <span class="vel-label">Sprint 21</span>
+                          <div class="vel-track"><div class="vel-fill" style="width: 78%;"></div></div>
+                          <span class="vel-val">78%</span>
+                        </div>
+                        <div class="velocity-bar-item">
+                          <span class="vel-label">Sprint 22</span>
+                          <div class="vel-track"><div class="vel-fill" style="width: 84%;"></div></div>
+                          <span class="vel-val">84%</span>
+                        </div>
+                        <div class="velocity-bar-item">
+                          <span class="vel-label">Sprint 23</span>
+                          <div class="vel-track"><div class="vel-fill" style="width: 89%;"></div></div>
+                          <span class="vel-val">89%</span>
+                        </div>
+                        <div class="velocity-bar-item active-vel">
+                          <span class="vel-label">Sprint 24</span>
+                          <div class="vel-track"><div class="vel-fill fill-gradient" style="width: 95%;"></div></div>
+                          <span class="vel-val">94.8%</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="analytics-subcard">
+                      <div class="subcard-header">
+                        <span class="subcard-title">Time Allocation</span>
+                        <span class="subcard-badge tag-mint">Optimal Flow</span>
+                      </div>
+                      <div class="breakdown-list">
+                        <div class="breakdown-item">
+                          <span class="breakdown-dot dot-rose"></span>
+                          <span class="breakdown-name">Deep Work & Code</span>
+                          <strong class="breakdown-pct">54%</strong>
+                        </div>
+                        <div class="breakdown-item">
+                          <span class="breakdown-dot dot-peach"></span>
+                          <span class="breakdown-name">UI & Architecture</span>
+                          <strong class="breakdown-pct">28%</strong>
+                        </div>
+                        <div class="breakdown-item">
+                          <span class="breakdown-dot dot-mint"></span>
+                          <span class="breakdown-name">Reviews & Quality</span>
+                          <strong class="breakdown-pct">18%</strong>
+                        </div>
+                      </div>
+                      <div class="focus-score-banner">
+                        <span>Productivity Score:</span>
+                        <strong class="gradient-text">98 / 100</strong>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- VIEW 3: CALENDAR VIEW -->
+                <div class="canvas-view" id="view-calendar" role="tabpanel" aria-labelledby="tab-btn-calendar" hidden>
+                  <div class="calendar-schedule-view">
+                    <div class="calendar-timeline-header">
+                      <span class="cal-heading">Sprint Schedule • October 2026</span>
+                      <span class="cal-sub">Current: Wednesday (Day 3 of 7)</span>
+                    </div>
+                    <div class="calendar-days-grid">
+                      <div class="cal-day-cell passed">
+                        <span class="cal-day-name">Mon 26</span>
+                        <div class="cal-event-pill event-done">✓ Sprint Planning</div>
+                      </div>
+                      <div class="cal-day-cell passed">
+                        <span class="cal-day-name">Tue 27</span>
+                        <div class="cal-event-pill event-done">✓ Palette Audit</div>
+                      </div>
+                      <div class="cal-day-cell current-day">
+                        <span class="cal-day-name">Wed 28</span>
+                        <div class="cal-event-pill event-active">● Design System v2</div>
+                      </div>
+                      <div class="cal-day-cell">
+                        <span class="cal-day-name">Thu 29</span>
+                        <div class="cal-event-pill event-upcoming">Webhooks Sync</div>
+                      </div>
+                      <div class="cal-day-cell">
+                        <span class="cal-day-name">Fri 30</span>
+                        <div class="cal-event-pill event-milestone">★ Milestone Deploy</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- VIEW 4: TEAM VIEW -->
+                <div class="canvas-view" id="view-team" role="tabpanel" aria-labelledby="tab-btn-team" hidden>
+                  <div class="team-members-grid" id="mockup-team-grid">
+                    <div class="team-member-card" data-member="Sarah Lin Product Lead">
+                      <div class="member-avatar av-sl">SL</div>
+                      <div class="member-info">
+                        <div class="member-top-row">
+                          <span class="member-name">Sarah Lin</span>
+                          <span class="member-status-pulse status-online" title="Online"></span>
+                        </div>
+                        <span class="member-role">Product Lead</span>
+                        <span class="member-curr-task">Active: <em>Design System Tokens v2</em></span>
+                      </div>
+                    </div>
+
+                    <div class="team-member-card" data-member="Alex Morgan Staff Engineer">
+                      <div class="member-avatar av-mr">AM</div>
+                      <div class="member-info">
+                        <div class="member-top-row">
+                          <span class="member-name">Alex Morgan</span>
+                          <span class="member-status-pulse status-busy" title="In Code Review"></span>
+                        </div>
+                        <span class="member-role">Staff Engineer</span>
+                        <span class="member-curr-task">Active: <em>API Pipeline Webhooks</em></span>
+                      </div>
+                    </div>
+
+                    <div class="team-member-card" data-member="Tyler Kim Frontend Developer">
+                      <div class="member-avatar av-tk">TK</div>
+                      <div class="member-info">
+                        <div class="member-top-row">
+                          <span class="member-name">Tyler Kim</span>
+                          <span class="member-status-pulse status-online" title="Online"></span>
+                        </div>
+                        <span class="member-role">Frontend Specialist</span>
+                        <span class="member-curr-task">Active: <em>Interactive Preview Tour</em></span>
+                      </div>
+                    </div>
+
+                    <div class="team-member-card" data-member="Maya Chen QA Automation">
+                      <div class="member-avatar av-mc">MC</div>
+                      <div class="member-info">
+                        <div class="member-top-row">
+                          <span class="member-name">Maya Chen</span>
+                          <span class="member-status-pulse status-away" title="Away"></span>
+                        </div>
+                        <span class="member-role">QA & Accessibility</span>
+                        <span class="member-curr-task">Active: <em>Cross-Browser Test Suite</em></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 2. FEATURES SHOWCASE SECTION -->
+    <section id="features" class="features-section section-padding" aria-labelledby="features-title">
+      <div class="container">
+        
+        <!-- Section Header -->
+        <div class="section-header text-center reveal-on-scroll">
+          <span class="section-badge">CAPABILITIES</span>
+          <h2 id="features-title" class="section-title">Everything You Need to Do Your Best Work</h2>
+          <p class="section-description">Powerful tools, thoughtfully designed to help you stay organized, work together, and achieve more.</p>
+        </div>
+
+        <!-- 6 Feature Cards Grid -->
+        <div class="features-grid">
+
+          <!-- Feature 1: Smart Task Management -->
+          <article class="feature-card reveal-on-scroll" style="--delay: 100ms;">
+            <div class="feature-icon-box" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M9 11l3 3L22 4"/>
+                <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/>
+              </svg>
+            </div>
+            <h3 class="feature-title">Smart Task Management</h3>
+            <p class="feature-text">Organize tasks, set priorities, establish deadlines, and track progress from one convenient workspace.</p>
+            <div class="feature-meta">
+              <span class="feature-tag">Priority Boards & Lists</span>
+              <span class="feature-arrow" aria-hidden="true">→</span>
+            </div>
+          </article>
+
+          <!-- Feature 2: Real-Time Collaboration -->
+          <article class="feature-card reveal-on-scroll" style="--delay: 150ms;">
+            <div class="feature-icon-box" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                <circle cx="9" cy="7" r="4"/>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+              </svg>
+            </div>
+            <h3 class="feature-title">Real-Time Collaboration</h3>
+            <p class="feature-text">Keep teammates aligned with shared projects, updates, comments, and clear task ownership.</p>
+            <div class="feature-meta">
+              <span class="feature-tag">Shared Team Canvases</span>
+              <span class="feature-arrow" aria-hidden="true">→</span>
+            </div>
+          </article>
+
+          <!-- Feature 3: Productivity Analytics -->
+          <article class="feature-card reveal-on-scroll" style="--delay: 200ms;">
+            <div class="feature-icon-box" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="18" y1="20" x2="18" y2="10"/>
+                <line x1="12" y1="20" x2="12" y2="4"/>
+                <line x1="6" y1="20" x2="6" y2="14"/>
+                <line x1="2" y1="20" x2="22" y2="20"/>
+              </svg>
+            </div>
+            <h3 class="feature-title">Productivity Analytics</h3>
+            <p class="feature-text">Understand your progress through clear reports, activity summaries, and visual productivity insights.</p>
+            <div class="feature-meta">
+              <span class="feature-tag">Velocity & Trend Reports</span>
+              <span class="feature-arrow" aria-hidden="true">→</span>
+            </div>
+          </article>
+
+          <!-- Feature 4: Intelligent Scheduling -->
+          <article class="feature-card reveal-on-scroll" style="--delay: 250ms;">
+            <div class="feature-icon-box" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                <line x1="16" y1="2" x2="16" y2="6"/>
+                <line x1="8" y1="2" x2="8" y2="6"/>
+                <line x1="3" y1="10" x2="21" y2="10"/>
+                <path d="M8 14h.01"/>
+                <path d="M12 14h.01"/>
+                <path d="M16 14h.01"/>
+              </svg>
+            </div>
+            <h3 class="feature-title">Intelligent Scheduling</h3>
+            <p class="feature-text">Plan your day, organize upcoming deadlines, and manage your workload with less friction.</p>
+            <div class="feature-meta">
+              <span class="feature-tag">Calendar Time-Blocking</span>
+              <span class="feature-arrow" aria-hidden="true">→</span>
+            </div>
+          </article>
+
+          <!-- Feature 5: Secure Workspace -->
+          <article class="feature-card reveal-on-scroll" style="--delay: 300ms;">
+            <div class="feature-icon-box" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                <path d="M9 12l2 2 4-4"/>
+              </svg>
+            </div>
+            <h3 class="feature-title">Secure Workspace</h3>
+            <p class="feature-text">Keep your work organized with thoughtfully designed access controls and privacy-conscious workflows.</p>
+            <div class="feature-meta">
+              <span class="feature-tag">Role-Based Permissions</span>
+              <span class="feature-arrow" aria-hidden="true">→</span>
+            </div>
+          </article>
+
+          <!-- Feature 6: Seamless Integrations -->
+          <article class="feature-card reveal-on-scroll" style="--delay: 350ms;">
+            <div class="feature-icon-box" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="8" height="8" rx="2"/>
+                <rect x="14" y="2" width="8" height="8" rx="2"/>
+                <rect x="8" y="14" width="8" height="8" rx="2"/>
+                <line x1="6" y1="10" x2="6" y2="12"/>
+                <line x1="18" y1="10" x2="18" y2="12"/>
+                <line x1="6" y1="12" x2="18" y2="12"/>
+                <line x1="12" y1="12" x2="12" y2="14"/>
+              </svg>
+            </div>
+            <h3 class="feature-title">Seamless Integrations</h3>
+            <p class="feature-text">Bring your everyday workflows together with an organized workspace designed to reduce unnecessary context switching.</p>
+            <div class="feature-meta">
+              <span class="feature-tag">50+ Connected Apps</span>
+              <span class="feature-arrow" aria-hidden="true">→</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. PRODUCT BENEFITS & SOCIAL-PROOF STRIP -->
+    <section class="benefits-section" aria-labelledby="benefits-title">
+      <div class="container">
+        
+        <!-- Header & 3 Benefit Pillars -->
+        <div class="benefits-wrapper reveal-on-scroll">
+          <div class="benefits-header">
+            <span class="section-badge">CORE ADVANTAGES</span>
+            <h2 id="benefits-title" class="benefits-main-title">Designed to Keep You in Flow</h2>
+            <p class="benefits-main-desc">Engineered for clarity, focus, and effortless alignment across every project milestone.</p>
+          </div>
+
+          <!-- 3 Concise Benefit Statements -->
+          <div class="benefits-grid">
+            <div class="benefit-item">
+              <div class="benefit-badge-num">01</div>
+              <h3 class="benefit-title">One organized workspace.</h3>
+              <p class="benefit-desc">Consolidate tasks, discussions, and docs into a cohesive single source of truth without tab overload.</p>
+            </div>
+
+            <div class="benefit-item">
+              <div class="benefit-badge-num">02</div>
+              <h3 class="benefit-title">Clear visibility into project progress.</h3>
+              <p class="benefit-desc">Identify bottlenecks early with real-time velocity metrics, visual milestone rings, and automated status summaries.</p>
+            </div>
+
+            <div class="benefit-item">
+              <div class="benefit-badge-num">03</div>
+              <h3 class="benefit-title">Less time spent managing tasks.</h3>
+              <p class="benefit-desc">Automate status updates, streamline handoffs, and liberate hours each week for actual deep creative work.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Illustrative Benchmark Metrics -->
+        <div class="metrics-strip reveal-on-scroll">
+          <div class="strip-item">
+            <span class="strip-number gradient-text">4.2x</span>
+            <span class="strip-label">Faster task turnaround*</span>
+          </div>
+          <div class="strip-divider" aria-hidden="true"></div>
+          <div class="strip-item">
+            <span class="strip-number gradient-text">85%</span>
+            <span class="strip-label">Less meeting overhead*</span>
+          </div>
+          <div class="strip-divider" aria-hidden="true"></div>
+          <div class="strip-item">
+            <span class="strip-number gradient-text">99.4%</span>
+            <span class="strip-label">Team alignment score*</span>
+          </div>
+        </div>
+        <p class="strip-footnote">*Illustrative scenario simulation benchmarks created for product demonstration evaluation.</p>
+
+        <!-- Testimonial Card (Clearly Identified Fictional Persona) -->
+        <div class="testimonial-container reveal-on-scroll">
+          <div class="testimonial-card">
+            <div class="quote-mark" aria-hidden="true">“</div>
+            <p class="testimonial-quote">
+              NEXORA transformed how our distributed team plans sprints and tracks milestones. The visual clarity and velocity tracking keep our teammates completely aligned without the burden of constant status check-ins.
+            </p>
+            <div class="testimonial-author">
+              <div class="author-avatar" aria-hidden="true">SL</div>
+              <div class="author-info">
+                <span class="author-name">Sarah Lin</span>
+                <span class="author-role">Product Lead, Horizon Labs <span class="fictional-tag">(Illustrative Fictional Testimonial)</span></span>
+              </div>
+              <div class="star-rating" aria-label="5 stars rating">★★★★★</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 4. PRICING SECTION WITH FUNCTIONAL BILLING TOGGLE -->
+    <section id="pricing" class="pricing-section section-padding" aria-labelledby="pricing-title">
+      <div class="container">
+        
+        <!-- Section Header -->
+        <div class="section-header text-center reveal-on-scroll">
+          <span class="section-badge">TRANSPARENT PRICING</span>
+          <h2 id="pricing-title" class="section-title">Simple Pricing That Grows With You</h2>
+          <p class="section-description">Start with what you need and upgrade as your workflow grows.</p>
+        </div>
+
+        <!-- Functional Billing Toggle -->
+        <div class="billing-switch-wrapper reveal-on-scroll">
+          <span class="billing-label" id="monthly-label">Monthly</span>
+          <button type="button" 
+                  class="billing-toggle-btn" 
+                  id="billing-toggle" 
+                  role="switch" 
+                  aria-checked="false" 
+                  aria-labelledby="monthly-label annual-label" 
+                  title="Toggle billing period between Monthly and Annual">
+            <span class="toggle-slider"></span>
+          </button>
+          <span class="billing-label" id="annual-label">
+            Annual
+            <span class="discount-pill">Save 25%</span>
+          </span>
+        </div>
+
+        <!-- 3 Pricing Cards Grid -->
+        <div class="pricing-grid">
+
+          <!-- PLAN 1: STARTER -->
+          <div class="pricing-card reveal-on-scroll" style="--delay: 100ms;">
+            <div class="card-plan-header">
+              <span class="plan-tag">Free Forever</span>
+              <h3 class="plan-name">Starter</h3>
+              <p class="plan-desc">Everything you need to get organized.</p>
+            </div>
+
+            <div class="plan-price-block">
+              <div class="price-display">
+                <span class="price-currency">$</span>
+                <span class="price-number" data-monthly="0" data-annual="0">0</span>
+                <span class="price-period">/ month</span>
+              </div>
+              <p class="plan-sub-billing" data-monthly="Free forever for individuals" data-annual="Free forever for individuals">Free forever for individuals</p>
+            </div>
+
+            <ul class="plan-features-list" aria-label="Starter plan features">
+              <li class="feature-item">
+                <span class="check-icon" aria-hidden="true">✓</span>
+                <span>Personal task management</span>
+              </li>
+              <li class="feature-item">
+                <span class="check-icon" aria-hidden="true">✓</span>
+                <span>Up to three active projects</span>
+              </li>
+              <li class="feature-item">
+                <span class="check-icon" aria-hidden="true">✓</span>
+                <span>Basic productivity dashboard</span>
+              </li>
+              <li class="feature-item">
+                <span class="check-icon" aria-hidden="true">✓</span>
+                <span>Standard workspace settings</span>
+              </li>
+            </ul>
+
+            <button type="button" class="btn btn-outline w-100 open-modal-btn" data-plan="Starter">
+              Get Started Free
+            </button>
+          </div>
+
+          <!-- PLAN 2: PRO (RECOMMENDED / MOST POPULAR) -->
+          <div class="pricing-card pricing-card-featured reveal-on-scroll" style="--delay: 200ms;">
+            <div class="popular-badge-pill" aria-label="Recommended plan">
+              <span>★ Most Popular</span>
+            </div>
+
+            <div class="card-plan-header">
+              <span class="plan-tag tag-violet">Recommended</span>
+              <h3 class="plan-name">Pro</h3>
+              <p class="plan-desc">More control for growing productivity.</p>
+            </div>
+
+            <div class="plan-price-block">
+              <div class="price-display">
+                <span class="price-currency">$</span>
+                <span class="price-number" data-monthly="12" data-annual="9">12</span>
+                <span class="price-period">/ month</span>
+              </div>
+              <p class="plan-sub-billing" data-monthly="Billed monthly ($12/mo)" data-annual="Billed annually ($108/year)">Billed monthly ($12/mo)</p>
+            </div>
+
+            <ul class="plan-features-list" aria-label="Pro plan features">
+              <li class="feature-item">
+                <span class="check-icon" aria-hidden="true">✓</span>
+                <span>Unlimited personal projects</span>
+              </li>
+              <li class="feature-item">
+                <span class="check-icon" aria-hidden="true">✓</span>
+                <span>Advanced productivity insights</span>
+              </li>
+              <li class="feature-item">
+                <span class="check-icon" aria-hidden="true">✓</span>
+                <span>Calendar and scheduling tools</span>
+              </li>
+              <li class="feature-item">
+                <span class="check-icon" aria-hidden="true">✓</span>
+                <span>Priority task organization</span>
+              </li>
+              <li class="feature-item">
+                <span class="check-icon" aria-hidden="true">✓</span>
+                <span>Enhanced workspace customization</span>
+              </li>
+            </ul>
+
+            <button type="button" class="btn btn-primary w-100 open-modal-btn" data-plan="Pro">
+              Choose Pro
+            </button>
+          </div>
+
+          <!-- PLAN 3: TEAM -->
+          <div class="pricing-card reveal-on-scroll" style="--delay: 300ms;">
+            <div class="card-plan-header">
+              <span class="plan-tag">Collaboration</span>
+              <h3 class="plan-name">Team</h3>
+              <p class="plan-desc">A shared workspace for collaborative teams.</p>
+            </div>
+
+            <div class="plan-price-block">
+              <div class="price-display">
+                <span class="price-currency">$</span>
+                <span class="price-number" data-monthly="29" data-annual="24">29</span>
+                <span class="price-period">/ month</span>
+              </div>
+              <p class="plan-sub-billing" data-monthly="Billed monthly per member" data-annual="Billed annually ($288/year per member)">Billed monthly per member</p>
+            </div>
+
+            <ul class="plan-features-list" aria-label="Team plan features">
+              <li class="feature-item">
+                <span class="check-icon" aria-hidden="true">✓</span>
+                <span>Shared team projects</span>
+              </li>
+              <li class="feature-item">
+                <span class="check-icon" aria-hidden="true">✓</span>
+                <span>Collaboration and comments</span>
+              </li>
+              <li class="feature-item">
+                <span class="check-icon" aria-hidden="true">✓</span>
+                <span>Team progress dashboard</span>
+              </li>
+              <li class="feature-item">
+                <span class="check-icon" aria-hidden="true">✓</span>
+                <span>Task ownership and permissions</span>
+              </li>
+              <li class="feature-item">
+                <span class="check-icon" aria-hidden="true">✓</span>
+                <span>Centralized project visibility</span>
+              </li>
+            </ul>
+
+            <button type="button" class="btn btn-outline w-100 open-modal-btn" data-plan="Team">
+              Choose Team
+            </button>
+          </div>
+
+        </div>
+
+        <!-- Demonstration Notice Banner -->
+        <div class="pricing-demo-notice reveal-on-scroll">
+          <div class="notice-icon" aria-hidden="true">ℹ️</div>
+          <p class="notice-text">
+            <strong>Demonstration Notice:</strong> The prices and plans shown above are sample demonstration tiers for the fictional NEXORA concept. No live payment gateway is attached and no charges will occur. Selecting a plan opens our interactive demo onboarding modal.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 5. INTERACTIVE FAQ ACCORDION -->
+    <section id="faq" class="faq-section section-padding" aria-labelledby="faq-title">
+      <div class="container faq-container">
+        
+        <!-- Section Header -->
+        <div class="section-header text-center reveal-on-scroll">
+          <span class="section-badge">GOT QUESTIONS?</span>
+          <h2 id="faq-title" class="section-title">Frequently Asked Questions</h2>
+          <p class="section-description">Everything you need to know before getting started.</p>
+        </div>
+
+        <!-- Accordion Container -->
+        <div class="faq-accordion" role="region" aria-label="Frequently Asked Questions Accordion">
+
+          <!-- FAQ Item 1 -->
+          <div class="faq-item reveal-on-scroll" style="--delay: 50ms;">
+            <button type="button" 
+                    class="faq-trigger" 
+                    id="faq-btn-1" 
+                    aria-expanded="false" 
+                    aria-controls="faq-panel-1">
+              <span class="faq-question-text">What is NEXORA?</span>
+              <span class="faq-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </span>
+            </button>
+            <div id="faq-panel-1" class="faq-panel" role="region" aria-labelledby="faq-btn-1" hidden>
+              <div class="faq-panel-content">
+                <p>NEXORA is a fictional productivity platform concept that brings task management, project organization, collaboration, and productivity insights into one workspace.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ Item 2 -->
+          <div class="faq-item reveal-on-scroll" style="--delay: 100ms;">
+            <button type="button" 
+                    class="faq-trigger" 
+                    id="faq-btn-2" 
+                    aria-expanded="false" 
+                    aria-controls="faq-panel-2">
+              <span class="faq-question-text">Is there a free plan?</span>
+              <span class="faq-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </span>
+            </button>
+            <div id="faq-panel-2" class="faq-panel" role="region" aria-labelledby="faq-btn-2" hidden>
+              <div class="faq-panel-content">
+                <p>Yes. The sample Starter plan is free and demonstrates the basic features of the platform.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ Item 3 -->
+          <div class="faq-item reveal-on-scroll" style="--delay: 150ms;">
+            <button type="button" 
+                    class="faq-trigger" 
+                    id="faq-btn-3" 
+                    aria-expanded="false" 
+                    aria-controls="faq-panel-3">
+              <span class="faq-question-text">Can I change my plan later?</span>
+              <span class="faq-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </span>
+            </button>
+            <div id="faq-panel-3" class="faq-panel" role="region" aria-labelledby="faq-btn-3" hidden>
+              <div class="faq-panel-content">
+                <p>In a real product, plan changes would depend on the account and billing system. This demonstration landing page does not process actual subscriptions.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ Item 4 -->
+          <div class="faq-item reveal-on-scroll" style="--delay: 200ms;">
+            <button type="button" 
+                    class="faq-trigger" 
+                    id="faq-btn-4" 
+                    aria-expanded="false" 
+                    aria-controls="faq-panel-4">
+              <span class="faq-question-text">Does NEXORA support team collaboration?</span>
+              <span class="faq-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </span>
+            </button>
+            <div id="faq-panel-4" class="faq-panel" role="region" aria-labelledby="faq-btn-4" hidden>
+              <div class="faq-panel-content">
+                <p>The fictional product concept includes shared projects, task ownership, comments, and team progress visibility.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ Item 5 -->
+          <div class="faq-item reveal-on-scroll" style="--delay: 250ms;">
+            <button type="button" 
+                    class="faq-trigger" 
+                    id="faq-btn-5" 
+                    aria-expanded="false" 
+                    aria-controls="faq-panel-5">
+              <span class="faq-question-text">Can I switch between monthly and annual pricing?</span>
+              <span class="faq-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </span>
+            </button>
+            <div id="faq-panel-5" class="faq-panel" role="region" aria-labelledby="faq-btn-5" hidden>
+              <div class="faq-panel-content">
+                <p>Yes. Use the billing selector in the Pricing section to switch between the sample monthly and annual prices.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ Item 6 -->
+          <div class="faq-item reveal-on-scroll" style="--delay: 300ms;">
+            <button type="button" 
+                    class="faq-trigger" 
+                    id="faq-btn-6" 
+                    aria-expanded="false" 
+                    aria-controls="faq-panel-6">
+              <span class="faq-question-text">How can I get started?</span>
+              <span class="faq-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </span>
+            </button>
+            <div id="faq-panel-6" class="faq-panel" role="region" aria-labelledby="faq-btn-6" hidden>
+              <div class="faq-panel-content">
+                <p>Select a CTA button to explore the demonstration sign-up interaction. No real account will be created by this static demo.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 6. FINAL CTA SECTION -->
+    <section class="final-cta-section section-padding" aria-labelledby="final-cta-title">
+      <div class="container">
+        <div class="cta-banner-card reveal-on-scroll">
+          <div class="cta-card-content">
+            <span class="section-badge">READY TO ACCELERATE?</span>
+            <h2 id="final-cta-title" class="cta-title">Make Space for Your Best Work.</h2>
+            <p class="cta-description">Bring clarity to your workflow and take the next step toward a more organized day.</p>
+            <div class="cta-actions">
+              <button type="button" class="btn btn-primary btn-lg open-modal-btn" data-plan="Pro">
+                <span>Get Started Today</span>
+                <svg class="icon-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </button>
+              <a href="#pricing" class="btn btn-secondary btn-lg">
+                <span>View Pricing</span>
+              </a>
+            </div>
+            <p class="cta-guarantee">✨ Instant demonstration access • No credit card required</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 7. PROFESSIONAL FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <!-- Brand Summary -->
+        <div class="footer-brand-col">
+          <a href="#home" class="brand-logo" aria-label="NEXORA Home">
+            <div class="logo-icon-wrapper" aria-hidden="true">
+              <svg class="logo-icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="40" height="40" rx="10" fill="#2D1E25" stroke="rgba(255, 206, 216, 0.3)"/>
+                <path d="M12 28V12L20 20L28 12V28" stroke="url(#navLogoGrad)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                <circle cx="20" cy="20" r="2.5" fill="#FFE8C4"/>
+              </svg>
+            </div>
+            <span class="brand-name">NEXORA<span class="brand-dot">.</span></span>
+          </a>
+          <p class="footer-brand-desc">
+            An all-in-one productivity platform uniting smart task management, team collaboration, and real-time analytics in one workspace.
+          </p>
+          <div class="system-status-pill">
+            <span class="status-pulse-dot" aria-hidden="true"></span>
+            <span>All systems operational (Simulation)</span>
+          </div>
+        </div>
+
+        <!-- Navigation Links -->
+        <div class="footer-links-col">
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-nav-list">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#pricing">Pricing Plans</a></li>
+            <li><a href="#faq">FAQ</a></li>
+          </ul>
+        </div>
+
+        <!-- Product Resources -->
+        <div class="footer-links-col">
+          <h4 class="footer-col-title">Platform</h4>
+          <ul class="footer-nav-list">
+            <li><a href="#features">Task Management</a></li>
+            <li><a href="#features">Team Collaboration</a></li>
+            <li><a href="#features">Productivity Analytics</a></li>
+            <li><a href="#pricing">Billing Options</a></li>
+          </ul>
+        </div>
+
+        <!-- Academic / Internship Information -->
+        <div class="footer-links-col">
+          <h4 class="footer-col-title">Project Info</h4>
+          <div class="internship-badge-card">
+            <span class="project-tag">Internship Task 3</span>
+            <p class="project-title">Product Landing Page</p>
+            <p class="project-meta">Clean Semantic Code • Vanilla JS • Modern CSS3</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom Bar -->
+      <div class="footer-bottom">
+        <p class="copyright-text">
+          &copy; <span id="current-year">2026</span> NEXORA Platform. All rights reserved.
+        </p>
+        <p class="disclaimer-text">
+          NEXORA is a fictional demonstration product created for an internship project. All pricing, personas, and metrics are illustrative.
+        </p>
+        <a href="#home" class="back-to-top" aria-label="Back to top of page">
+          <span>Top</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <polyline points="18 15 12 9 6 15"></polyline>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- 8. INTERACTIVE SIGN-UP DEMONSTRATION MODAL -->
+  <div class="modal-backdrop" id="signup-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" hidden>
+    <div class="modal-dialog">
+      <!-- Close Button -->
+      <button type="button" class="modal-close-btn" id="modal-close-btn" aria-label="Close interactive demonstration modal">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+
+      <!-- Modal Body - Input Form State -->
+      <div class="modal-form-view" id="modal-form-view">
+        <div class="modal-header">
+          <div class="demo-badge">
+            <span class="demo-indicator-dot" aria-hidden="true"></span>
+            <span>Frontend Demonstration</span>
+          </div>
+          <h3 id="modal-title" class="modal-title">Experience the NEXORA Workspace</h3>
+          <p class="modal-subtitle">Test our onboarding flow. Enter a sample work email to launch your interactive simulation.</p>
+        </div>
+
+        <form id="signup-form" class="modal-form" novalidate>
+          <!-- Full Name -->
+          <div class="form-group">
+            <label for="demo-name" class="form-label">Full Name</label>
+            <input type="text" 
+                   id="demo-name" 
+                   name="fullName" 
+                   class="form-input" 
+                   placeholder="e.g. Alex Morgan" 
+                   autocomplete="name" 
+                   required>
+            <span class="field-error-msg" id="name-error" aria-live="polite"></span>
+          </div>
+
+          <!-- Work Email -->
+          <div class="form-group">
+            <label for="demo-email" class="form-label">Work Email</label>
+            <input type="email" 
+                   id="demo-email" 
+                   name="email" 
+                   class="form-input" 
+                   placeholder="alex@example.com" 
+                   autocomplete="email" 
+                   required>
+            <span class="field-error-msg" id="email-error" aria-live="polite"></span>
+          </div>
+
+          <!-- Plan Selection -->
+          <div class="form-group">
+            <label for="demo-plan" class="form-label">Selected Plan Interest</label>
+            <select id="demo-plan" name="plan" class="form-select">
+              <option value="Starter">Starter (Free)</option>
+              <option value="Pro" selected>Pro ($12/mo — Recommended)</option>
+              <option value="Team">Team ($29/mo)</option>
+            </select>
+          </div>
+
+          <!-- Disclaimer Note -->
+          <div class="modal-notice">
+            <p><strong>Note:</strong> This interaction is purely a client-side demonstration. No email will be sent and no real account will be created.</p>
+          </div>
+
+          <!-- Submit Button -->
+          <button type="submit" class="btn btn-primary w-100 modal-submit-btn" id="modal-submit-btn">
+            <span>Launch Simulated Workspace</span>
+            <svg class="icon-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </button>
+        </form>
+      </div>
+
+      <!-- Modal Body - Success Feedback State -->
+      <div class="modal-success-view" id="modal-success-view" hidden>
+        <div class="success-icon-wrapper" aria-hidden="true">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#34D399" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+            <polyline points="22 4 12 14.01 9 11.01"></polyline>
+          </svg>
+        </div>
+        <h3 class="success-title">Workspace Ready!</h3>
+        <p class="success-message">
+          Welcome aboard! We've simulated a personalized <strong id="success-plan-name" class="gradient-text">Pro</strong> workspace for <strong id="success-email-text">user@example.com</strong>.
+        </p>
+        <div class="success-summary-box">
+          <div class="summary-line">
+            <span>Simulated Projects:</span>
+            <strong>3 Starter Boards Loaded</strong>
+          </div>
+          <div class="summary-line">
+            <span>Live Collaboration:</span>
+            <strong>Enabled (Simulation)</strong>
+          </div>
+          <div class="summary-line">
+            <span>Demo Mode:</span>
+            <strong>100% Client-Side Safe</strong>
+          </div>
+        </div>
+        <button type="button" class="btn btn-primary w-100" id="modal-done-btn">
+          <span>Return to Landing Page</span>
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
